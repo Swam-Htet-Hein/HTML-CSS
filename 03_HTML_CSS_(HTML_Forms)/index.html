@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- form tag -->
+    <form>
+        <!-- label tag ထဲမှ for attribute သည် ဒီ label ဟာဘယ် input tag နဲ့ (associate)သက်ဆိုင်ကြောင်းပြသည်။ -->
+        <label for="username">Enter name:</label>
+        <!-- id (identifier) သည် ဒီ input tag ကဘာဖြစ်ကြောင်း ကြေညာခြင်းဖြစ်သည်။ -->
+        <input type="text" id="username" name="name" placeholder="username" required>
+        <br><br>
+        <!-- Another input type -->
+        <label for="email">Enter email:</label>
+        <input type="email" id="email" name="email" placeholder="your email" required>
+        <br><br>
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" name="password" placeholder="enter password" required>
+        <!-- name သည် server side, PHP တွေမှာအသုံးပြုတယ်။ -->
+        <br><br>
+
+        <!-- name ကို radio type မှာလည်းအသုံးပြုနိုင်သည်။ -->
+        <!-- တခြား input တွေမှာ name value အတူတူပဲဆိုရင် ဒီ input တွေဟာတခုနဲ့တခု ချိတ်ဆက်နေတယ်။ -->
+        <!-- name attribute နဲ့ grouping လုပ်လိုက်တာပါ။ -->
+        <input type="radio" name="gender" value="male">Male <br>
+        <input type="radio" name="gender" value="female">Female <br>
+        <input type="radio" name="gender2" value="other">Other <br> <!--အကယ်၍မတူဘူးဆိုရင် ဒီ input ဟာသီးခြားဖြစ်သွားမှာပါ။-->
+        <!-- value တွေသည် ကိုယ်က Male or Female ရွှေးပြီး submit လုပ်လိုက်တဲ့အခါမှာ server ကိုသွားပို့မဲ့ တန်ဖိုးတွေဖြစ်တယ်။ -->
+        <!-- ရှေ့ကinputတွေမှာကျတော့ကိုယ်ကပဲvalueတွေကိုရိုက်ထည့်ရတယ်။ -->
+
+        <p>Select your age:</p>
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label><br>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2">26-50</label><br>
+        <input type="radio" name="age" value="51+" id="option-3">
+        <label for="option-3">51+</label><br>
+
+        <!-- select tag, option tag -->
+        <label for="fav-color">Your favourite color:</label>
+        <select name="fav-color" id="fav-color">
+            <option value="red">My favourite color is red</option>
+            <option value="blue">My favourite color is blue</option>
+            <option value="green">My favourite color is green</option>
+            <option value="yellow">My favourite color is yellow</option>
+            <option value="purple">My favourite color is purple</option>
+        </select><br><br>
+        <!-- select သည် option တွေထဲကမှာ တစ်ခုကိုရွှေးခိုင်းပြီး submit လုပ်တဲ့အခါ ရွေးထားတဲ့ value ကို server ပြန်ပို့တယ်။ -->
+        <label for="question">Why do you like this color?</label>
+        <input type="text" name="fav-color-qs" id="question"><br><br>
+
+        <!-- textarea tag -->
+        <label for="bio">Your Bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About me..."></textarea>
+        <br><br>
+
+        <!-- submit -->
+        <input type="submit" value="Submit the form">
+        <!-- အကယ်၍ submit ကိုနှိပ်လိုက်ရင် form tag ထဲက action attribute က ဒီ form ထဲမှာရှိတဲ့ value တွေဘယ်ကိုသွားမလဲ ဆိုတာကို လုပ်တယ်။ -->
+    </form>
+    <!-- 
+        Summary
+        - How to create a web form and what the 'action' attribute is for.
+        - Seen a lot of the most common input types.
+        (text, email, password, radio, select, textarea)
+        - How to use labels, the id attribute & the name attribute.
+        - How forms are submitted and validated.
+     -->
+    <br><br><br>
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">More about input types</a>
+</body>
+</html>

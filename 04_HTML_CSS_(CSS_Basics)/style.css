@@ -1,0 +1,34 @@
+/* h1, p တို့သည် CSS selectors များဖြစ်သည်။ */
+/* color သည် CSS declaration ဖြစ်သည်။ */
+h1 {
+    color: orange;
+    background-color: lightgray;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+p {
+    color: slateblue;
+    text-align: right;
+    line-height: 30px;
+    letter-spacing: 3px;
+    /* column-count သည် သတင်းစာ တွေလို စာပိုင့်လိုင်းတွေခွဲလိုက်တာဖြစ်သည်။ */
+    /* column-gap သည် column တွေကြားက အကွာအဝေးဖြစ်သည်။ */
+    column-count: 3;
+    column-gap: 30px;
+}
+ul {
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: crimson; */
+    /* border: 2px solid crimson; */
+    border-bottom: 2px dotted crimson;
+    border-left: 2px dashed crimson;
+}
+li {
+    /* list-style-type: disc; သည် default ဖြစ်သည်။ */
+    list-style-type: none;
+             /*right down  color*/
+    text-shadow: 3px 3px grey;
+}

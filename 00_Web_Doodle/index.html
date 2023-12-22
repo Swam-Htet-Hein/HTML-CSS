@@ -2,45 +2,32 @@
 <html>
     <head>
         <title>Doodle</title>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="form">
-            <h2>Welcome to CodeDoodle</h2>
-            <hr>
-            <form action="#">
-                <table class="form-table">
-                    <tr>
-                        <th>
-                            <label for="username">Enter username:</label>
-                        </th>
-                        <th>
-                            <input type="text" id="username" name="name" placeholder="username">
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="email">Enter email:</label>
-                        </th>
-                        <th>
-                            <input type="email" id="email" name="email" placeholder="email address">
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="password">Enter password:</label>
-                        </th>
-                        <th>
-                            <input type="password" id="password" name="password" placeholder="enter password">
-                        </th>
-                    </tr>
-                </table>
-                <br>
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms"><small>accept all the terms and cookies?</small></label>
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        <h1>HTML Forms</h1>
+        <form>
+            <input type="radio" name="class" id="class-1" value="Class 01" checked>
+            <label for="class-1">Class 01</label><br>
+            <input type="radio" name="class" id="class-2" value="Class 02">
+            <label for="class-2">Class 02</label><br>
+            <input type="radio" name="class" id="class-3" value="Class 03">
+            <label for="class-3">Class 03</label>
+            <br><br>
+
+            <label for="fav-color">What is your favourite color?</label><br>
+            <select name="fav-color" id="fav-color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <br><br>
+
+            <label for="bio">Tell me about yours</label><br>
+            <textarea name="myBio" id="bio" cols="30" rows="10" placeholder="About me..."></textarea>
+            <br><br>
+
+            <input type="submit">
+        </form>
     </body>
 </html>

@@ -1,0 +1,23 @@
+/* 
+    Hex code (#)
+    #RGB
+    #000000 (black)
+    #FFFFFF (white)
+    #FF0000 (red)
+    #00FF00 (green)
+    #0000FF (blue)
+*/
+
+span {
+    /* display: block; */
+    display: inline-block;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+div {
+    /* display: inline; */
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,72 @@
+/* 
+    .error ဆိုပြီး select လုပ်ရင် error class ရှိတဲ့ element တိုင်းမှာသက်ရောက်မယ်။
+    p.error ဆိုပြီး select လုပ်ရင် error class ရှိတဲ့ p tags တွေမှာပဲသက်ရောက်မယ်။
+*/
+/* .error {
+    color: red;
+} */
+p.error {
+    color: red;
+}
+p.success {
+    color: #0dcb0d;
+}
+p.feedback {
+    border: 1px dashed #0dcb0d;
+}
+/* id သည် unique name ဖြစ်ရမည်။ */
+/* CSS နဲ့ styling လုပ်ရာမှာ id ကိုသုံးတာထက် class ကို သုံးတာပို့ကောင်းပါတယ်။ */
+/* id ကို javascript programming language နဲ့ ချိတ်ဆက်ပြီးသုံး‌လေ့ရှိသည်။ */
+#content {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+/* div (parent) ထဲမှာရှိတဲ့ p (child) တွေအကုန်လုံးကို select မှတ်ခြင်းဖြစ်သည်။ */
+div p {
+    color: purple;
+}
+/* div (parent) ထဲမှာရှိတဲ့ .error class ရှိတဲ့ tags တွေကို select မှတ်ခြင်းဖြစ်သည်။ */
+div .error {
+    color: red;
+}
+
+/* attribute selector ဆိုတာ attribute ရှိတဲ့ tag ကို select မှတ်ခြင်းဖြစ်သည်။ */
+/* a tag တွင် href attribute ရှိသည်။ အဲဒီ href attribute ကို select မှတ်ပြီး ယူခြင်းဖြစ်သည်။ */
+/* a[href] {
+    background-color: orange;
+} */
+/* a[href] သည် href attribute ရှိသမျှ tag တိုင်းကို select မှတ်လိုက်တာ */
+/* အဲလိုမဟုတ်ဘဲ www.google.com ပဲရှိတဲ့ tag ကို ‌attribute selector သုံးချင်တယ်ဆိုလည်းရတယ်။ */
+a[href="https://www.google.com"] {
+    /* href="https://www.google.com" ရှိတဲ့ tag တွေမှာပဲ select မှတ်လိုက်မှာဖြစ်ပါတယ်။ */
+    color: black;
+    background-color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* www.wikipedia.com ရှိတဲ့ attribute တိုင်ကိုပဲ select လုပ်မှာပါ။ */
+a[href="https://www.wikipedia.com"] {
+    color: black;
+    background-color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* href="https://www.wikipedia.com" ဆိုပြီးလိုက်ထည့်နေတာ ရှည်တယ်။ */
+a[href*="youtube"] {
+    /* youtube ဆိုတဲ့စာ နဲ့ အနီးစပ်ဆုံးတူတဲ့ href attribute ကို select လုပ်လိုက်တာ။ */
+    color: white;
+    background-color: #ff1d1d;
+    text-decoration: none;
+    font-weight: bold;
+}
+a[href$=".org"] {
+    /* .org နဲ့ဆုံးတဲ့ href attribute ကို select လုပ်လိုက်တာ */
+    color: blue;
+    background-color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,18 +1,41 @@
-html, body {
-    margin: 0;
-    padding: 0;
+p.error {
+    color: red;
+}
+
+div h3.success {
+    color: #09dd09;
+}
+
+/* a[href] {
+    background-color: aqua;
+} */
+a[href="https://www.google.com"] {
+    background-color: yellow;
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+a[href="https://www.wikipedia.com"] {
     background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
-label {
-    font-size: 13px;
+a[href*="youtube"] {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-.form {
+a[href*="snaptube"] {
     background-color: white;
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
 }
-.form-table {
-    text-align: right;
+a[href$=".org"] {
+    background-color: cyan;
+    color: slateblue;
+    text-decoration: none;
+    font-weight: bold;
 }

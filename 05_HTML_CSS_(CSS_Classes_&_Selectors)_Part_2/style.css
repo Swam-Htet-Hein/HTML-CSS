@@ -1,0 +1,22 @@
+div {
+    /* 
+        margin, border and padding တွေကို default အနေနဲ့ inherit မလုပ်ဘူး။
+        ကျန်တဲ့ color, font-weight စတာတွေကိုတော့ default အနေနဲ့ inherit လုပ်တယ်။
+    */
+    color: slateblue;
+    margin: 40px;
+    border: 1px solid red;
+    padding: 20px;
+    font-weight: bold;
+}
+/* inherit မလုပ်တဲ့ css rules တွေကို inherit လုပ်ချင်ရင် */
+div p {
+    /* div p သည် p ထက် Specificity ပိုများသည် */
+    margin: inherit;
+    border: inherit;
+    padding: inherit;
+    color: red;
+}
+p {
+    color: orange;
+}

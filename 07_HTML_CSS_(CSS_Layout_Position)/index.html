@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mario Club</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- 
+        CSS position property
+        - Static (default)
+        - Relative
+        - Absolute
+        - Fixed
+        - Sticky
+
+        Relative သည် အနီးစပ်ဆုံး parent element နဲ့ နှိုင်းယှဉ်ပြီး နေရာပြောင်းအရွှေ့လုပ်တယ်။
+            element {
+                position: relative; selected လုပ်ထားတဲ့ element ကို သူ့ရဲ့ position အမျိုးအစားကို relative ပေးလိုက်တဲ့ အတွက် အနီးစပ်ဆုံး parent element ထဲမှာ နေရာအပြောင်းအရွှေလုပ်နိုင်တယ်။
+                top: 200px;
+                left: 50px;
+            }
+
+        Absolute သည် သီးခြား element အနေနဲ့ content ကနေခွဲထွက်သွားသည်။ အဲ့လိုခွဲထွက်သွားလို့ လွတ်သွားတဲ့ နေရာကို အောက်က element တွေကနေရာဝင်ယူလိုက်တယ်။
+            element {
+                position: absolute; selected element သည် content ကနေသီးခြားခွဲထွက်သွားသည်။ သို့သော် scrolling လုပ်ရင်တော့ သူ့နေရာကရွှေပြီး ပြန်ပါတယ်။
+            }
+            parent element တစ်ခုထဲမှာရှိတဲ့ child element တွေကို လိုသလိုနေရာအပြောင်းအရွေ့ လုပ်ချင်ရင် 
+            parent {
+                position: relative; parent element ကို position relative ပေးထားပြီး
+            }
+            child {
+                position: absolute; ကိုယ်နေရာပြောင်းချင်တဲ့ child element ကို positoin absolute ပေးပြီး top, left, right, buttom စတာတွေနဲ့ control လုပ်ပါ။
+                top: 50%
+            }
+
+        Fixed သည် web page စာမျက်နှာကို scrolling လုပ်လိုက်ရင်တောင်နေရာ မရွေ့သွားအောင်သုံးလို့ရတယ်။
+            element to be fixed {
+                position: fixed; top, left သည် နဂိုမှုလ position ကို reset ပြန်လုပ်လိုက်တာပါ။
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+        Sticky သည် static and fixed ကို ပေါင်းစပ်ထားခြင်းဖြစ်သည်။
+        top attribute သည် sticky element ကို ဘယ်အချိန်မှာ fixed position ပြောင်းရမလဲဆိုတာကို ထိန်းညှိပေးတယ်။
+            element {
+                position: sticky;
+                top: 50px; အပေါ်ကနေ 50px အရောက်မှာ element ကို fixed position ပြောင်းလိုက်မယ်လို့ကြေညာတယ်။
+            }
+     -->
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>MarioClub</h1>
+        </header>
+        <!-- Section for image and some text (banner) -->
+        <section class="banner">
+            <img src="img/banner.png" alt="mario club welcome banner">
+            <div class="welcome">
+                <h2>Welcome to <br><span>Marioclub</span></h2>
+            </div>
+        </section>
+        <!-- navigation bar -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/join.html" class="join">Join the club</a></li>
+                <li><a href="/news.html">Latest news</a></li>
+                <li><a href="/games.html">New games</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- main content -->
+        <main>
+            <article>
+                <h2>It's a me Mario</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum odit sint, ea quo et officia. Aut nulla, ab et tempore libero repudiandae consequatur velit sint recusandae reprehenderit? Veniam, dolorum.
+                    Asperiores, voluptas voluptatem eligendi cumque porro dolorem nesciunt sit quo esse, animi eum? Labore dignissimos adipisci eaque officiis possimus tempore. Rem voluptatum sunt totam odio impedit quidem assumenda eos aliquid!
+                    Saepe accusamus illo assumenda aut ab! Sapiente ut repudiandae, iste est ipsum veritatis mollitia! Quam enim pariatur nobis, expedita corrupti cupiditate aliquid explicabo quod voluptatibus nostrum nam, iste rem temporibus.
+                </p>
+            </article>
+            <ul class="images">
+                <li><img src="img/thumb-1.png" alt="mario thumb 1"></li>
+                <li><img src="img/thumb-2.png" alt="mario thumb 2"></li>
+            </ul>
+        </main>
+        <!-- Section for join -->
+        <section class="join">
+            <h2>Join Today!</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident officiis odit dolores maiores minus eaque deserunt nulla nostrum facilis tenetur.
+            </p>
+            <form>
+                <input type="email" name="email" placeholder="Type your email & enter" required>
+            </form>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p class="copyright">Copyright &copy; 2023 Mario club &reg;</p>
+        </footer>
+    </body>
+</html>
